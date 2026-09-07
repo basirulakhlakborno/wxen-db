@@ -1,8 +1,8 @@
 [
   {
-    "id": "hello",
-    "title": "Welcome to wxen",
-    "body": "Tap to start watching.",
-    "href": "/"
+    "id": "tg-1",
+    "title": "Join Telegram",
+    "body": "News and updates from wxen.",
+    "telegram": "https://t.me/hakai_7x"
   }
 ]
