@@ -1,12 +1,15 @@
 # wxen-db
 
-Private JSON the wxen app loads from the OTA Worker (`/api/db`). Edit and push. No key, no seal.
+Private JSON. The APK has no password. The Worker serves `/api/db`.
 
 ```
 # edit src/config.json
 git add src/config.json
 git commit -m "Update endpoints."
 git push
+
+cd D:\anip\netprime
+npm run db:publish
 ```
 
-Phones pick it up within about a minute. Do not make this repo public.
+Do not make this repo public.
