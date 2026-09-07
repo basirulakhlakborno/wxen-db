@@ -1,4 +1,4 @@
-src/config.json
 .wxen-db.key
+wxen.enc
 node_modules/
 .DS_Store
