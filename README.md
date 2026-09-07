@@ -1,15 +1,13 @@
 # wxen-db
 
-Private JSON. The APK has no password. The Worker serves `/api/db`.
+Encrypted API / cookie DB for wxen. GitHub holds `wxen.enc` only. The decrypt key lives in the APK, not this repo.
 
 ```
-# edit src/config.json
-git add src/config.json
-git commit -m "Update endpoints."
+# edit src/config.json (local, gitignored)
+node scripts/seal.js
+git add wxen.enc
+git commit -m "Refresh sealed db."
 git push
-
-cd D:\anip\netprime
-npm run db:publish
 ```
 
-Do not make this repo public.
+Phones fetch `wxen.enc` and decrypt on device. Needs `.wxen-db.key` on the machine that seals — never commit that file.
